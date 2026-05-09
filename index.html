@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Library</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <header>
+      <nav class="navbar-container">
+        <div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group no-underline">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:bg-blue-700 transition-all">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <span class="text-xl font-extrabold text-slate-900">Campus<span class="text-blue-600">Library</span></span>
+            </a>
+            <div class="hidden md:flex gap-10 items-center">
+                <a href="notes.html"  target="_blank" rel="noopener noreferrer"class="nav-link ">Notes</a>
+                <a href="syllabus.html"t  target="_blank" rel="noopener noreferrer"class="nav-link">Syllabus</a>
+                <a href="pyq.html"  target="_blank" rel="noopener noreferrer"class="nav-link">PYQs</a>
+                <a href="about.html"  target="_blank" rel="noopener noreferrer"class="nav-link">About</a>
+                <a href="signin.html"  target="_blank" rel="noopener noreferrer"class="signin-btn">Sign In</a>
+            </div>
+        </div>
+    </nav>
+      <!-- Mobile Navigation: Updated Links and target="_blank" -->
+      <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="notes.html" target="_blank" rel="noopener noreferrer">Notes</a>
+        <a href="syllabus.html" target="_blank" rel="noopener noreferrer">Syllabus</a>
+        <a href="pyq.html" target="_blank" rel="noopener noreferrer">PYQs</a>
+        <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+        <a href="signin.html" class="mobile-cta">Sign In</a>
+      </div>
+    </nav>
+
+    <section class="welcome-section">
+      <h1 class="welcome-text">Welcome to <span class="highlight">Digital BCA Library</span></h1>
+      <div class="bottom-line"></div>
+    </section>
+
+    <!-- Carousel Section -->
+    <div id="controls-carousel" class="relative w-full" data-carousel="slide">
+      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/img/banner-1.png" class="absolute block w-full h-full object-cover object-center" alt="Banner 1">
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/img/banner-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Banner 2">
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img src="assets/img/banner-3.png" class="absolute block w-full h-full object-cover object-center" alt="Banner 3">
+        </div>
+      </div>
+
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 focus:ring-4 focus:ring-white">
+          <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 focus:ring-4 focus:ring-white">
+          <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+
+    <section class="testimonials">
+      <h2>What Students Say</h2>
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <p>"This library has made studying so much easier. Everything I need in one place!"</p>
+          <span>- Priya Sharma</span>
+        </div>
+        <div class="testimonial">
+          <p>"The notes and syllabus PDFs are super helpful before exams. Highly recommended!"</p>
+          <span>- Rahul Verma</span>
+        </div>
+        <div class="testimonial">
+          <p>"Clean and simple interface. Easy to find resources quickly."</p>
+          <span>- Ananya Gupta</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>BCA Digital Library</h3>
+          <p>Centralized Digital Library for BCA 5th Semester Students. Access syllabus, notes, and study material anytime.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <!-- Footer links also updated for consistency -->
+            <li><a href="syllabus.html" target="_blank" rel="noopener noreferrer">Syllabus</a></li>
+            <li><a href="library.html" target="_blank" rel="noopener noreferrer">Library</a></li>
+            <li><a href="notes.html" target="_blank" rel="noopener noreferrer">Notes</a></li>
+            <li><a href="pyq.html" target="_blank" rel="noopener noreferrer">PYQS</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> College Campus, Chandigarh</p>
+          <p><i class="fas fa-envelope"></i> library@bcacollege.edu</p>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 BCA Digital Library | All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus | Digital BCA Hub</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/2563eb/open-book.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50/50">
+
+    <nav class="navbar-container">
+        <div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 no-underline group">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:bg-blue-700 transition-all">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <span class="text-xl font-extrabold text-slate-900">Campus<span class="text-blue-600">Library</span></span>
+            </a>
+            <div class="hidden md:flex gap-10 items-center">
+                <a href="notes.html" class="nav-link">Notes</a>
+                <a href="syllabus.html" class="nav-link active">Syllabus</a>
+                <a href="pyq.html" class="nav-link">PYQs</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="signin.html" class="signin-btn">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="library-header max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-extrabold text-slate-900 mb-2 tracking-tight">University Syllabus</h2>
+        <p class="text-slate-500 text-lg">Detailed unit-wise breakdown for all semesters</p>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 mb-12">
+        <div class="flex flex-wrap justify-center gap-4" id="semester-tabs">
+            <button class="tab-btn tab-active" onclick="switchSemester(1)">Semester 1</button>
+            <button class="tab-btn" onclick="switchSemester(2)">Semester 2</button>
+            <button class="tab-btn" onclick="switchSemester(3)">Semester 3</button>
+            <button class="tab-btn" onclick="switchSemester(4)">Semester 4</button>
+            <button class="tab-btn" onclick="switchSemester(5)">Semester 5</button>
+            <button class="tab-btn" onclick="switchSemester(6)">Semester 6</button>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 gap-10" id="subject-grid">
+            <!--sem 1-->
+            <div class="syllabus-card-full" data-semester="1">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-blue-600"><i class="fa-solid fa-calculator"></i></div>
+                        <div><h3 class="subject-main-title">Mathematics</h3><p class="subject-code">UGCA1901</p></div>
+                    </div>
+                    <a href="assets\syllabus\mathss.pdf"target="_blank" class="download-pdf-btn"><i class="fa-solid fa-file-pdf mr-2"></i> PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Sets Theory</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Logic Statement</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Matrices</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Progression</p></div>
+                </div>
+            </div>
+             <div class="syllabus-card-full" data-semester="1">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-blue-600"><i class="fa-solid fa-calculator"></i></div>
+                        <div><h3 class="subject-main-title">Fundamentals of IT</h3><p class="subject-code">UGCA1901</p></div>
+                    </div>
+                    <a href="assets\syllabus\itsyll.pdf" target="_blank"class="download-pdf-btn"><i class="fa-solid fa-file-pdf mr-2"></i> PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Human Computer Interface</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Concept of Computing</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Spreadsheet</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Electronic Payment System</p></div>
+                </div>
+            </div>
+             <div class="syllabus-card-full" data-semester="1">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-blue-600"><i class="fa-solid fa-calculator"></i></div>
+                        <div><h3 class="subject-main-title">Problem Solving in C</h3><p class="subject-code">UGCA1901</p></div>
+                    </div>
+                    <a href="assets\syllabus\csyll.pdf" target="_blank"class="download-pdf-btn"><i class="fa-solid fa-file-pdf mr-2"></i> PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Logic Development</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Data Input and Output</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Functions & Array</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Structures,Unions & File Handling</p></div>
+                </div>
+            </div>
+             <div class="syllabus-card-full" data-semester="1">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-blue-600"><i class="fa-solid fa-calculator"></i></div>
+                        <div><h3 class="subject-main-title">English</h3><p class="subject-code">UGCA1901</p></div>
+                    </div>
+                    <a href="assets\syllabus\englishsyll.pdf" target="_blank"class="download-pdf-btn"><i class="fa-solid fa-file-pdf mr-2"></i> PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Introduction</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Language of Communication</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Reading and Understanding</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Writing Skills</p></div>
+                </div>
+            </div>
+             <div class="syllabus-card-full" data-semester="1">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-blue-600"><i class="fa-solid fa-calculator"></i></div>
+                        <div><h3 class="subject-main-title">Human Values</h3><p class="subject-code">UGCA1901</p></div>
+                    </div>
+                    <a href="assets\syllabus\hvsyll.pdf" target="_blank" class="download-pdf-btn"><i class="fa-solid fa-file-pdf mr-2"></i> PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Course Introduction</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Understanding Harmony in the Human Being</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Understanding Harmony in the Family and Society- Harmony in HumanHuman Relationship</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Understanding Harmony in the Nature and Existence - Whole existence
+as Co-existence</p></div>
+                </div>
+            </div>
+<!--sem 2-->
+            <div class="syllabus-card-full hidden" data-semester="2">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-orange-500"><i class="fa-solid fa-chart-line"></i></div>
+                        <div><h3 class="subject-main-title">Fundamentals of Statistics</h3><p class="subject-code">UGCA1907</p></div>
+                    </div>
+                    <a href="assets\syllabus\statsyl.pdf"target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Statistics and Probability</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Classification of Data Frequency Distribution</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Measures of Central tendency</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Measures of Dispersion</p></div>
+                </div>
+            </div>
+             <div class="syllabus-card-full hidden" data-semester="2">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-orange-500"><i class="fa-solid fa-chart-line"></i></div>
+                        <div><h3 class="subject-main-title">Environmental Studies</h3><p class="subject-code">UGCA1907</p></div>
+                    </div>
+                    <a href="assets\syllabus\evssyl.pdf"target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Introduction to Environmental Studies</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Ecosystems</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Natural Resources</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Biodiversity & its conservation</p></div>
+                    <div class="unit-box"><h6>Unit 5</h6><p> Environmental Pollution & Social Issues</p></div>
+                    <div class="unit-box"><h6>Unit 6</h6><p> Field Work</p></div>
+                </div>
+            </div>
+ <div class="syllabus-card-full hidden" data-semester="2">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-orange-500"><i class="fa-solid fa-chart-line"></i></div>
+                        <div><h3 class="subject-main-title">OOPs using C++</h3><p class="subject-code">UGCA1907</p></div>
+                    </div>
+                    <a href="#"target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Principles of object oriented programming</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Classes & Objects and Concept of Constructors</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Inheritance and Operator overloading</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Polymorphism and File Handling</p></div>
+                </div>
+            </div>
+ <div class="syllabus-card-full hidden" data-semester="2">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-orange-500"><i class="fa-solid fa-chart-line"></i></div>
+                        <div><h3 class="subject-main-title">Computer Architecture</h3><p class="subject-code">UGCA1907</p></div>
+                    </div>
+                    <a href="#"target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Logic Gates</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Combinational Logic Circuits</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Sequential Logic Circuits</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Introduction to Computer Organization</p></div>
+                </div>
+            </div>
+<!--sem3-->
+
+            <div class="syllabus-card-full hidden" data-semester="3">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-green-600"><i class="fa-solid fa-database"></i></div>
+                        <div><h3 class="subject-main-title">PC Troubleshooting</h3><p class="subject-code">UGCA1911</p></div>
+                    </div>
+                    <a href="#"target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Brief history of computer on the basis Hardware</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Perform installation, configuration, and upgrading of microcomputer/compute</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Install/connect associated peripherals</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Diagnose and troubleshooting of microcomputer/ computer systems hardware& software and other peripheral equipment</p></div>
+                </div>
+            </div>
+             <div class="syllabus-card-full hidden" data-semester="3">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-green-600"><i class="fa-solid fa-database"></i></div>
+                        <div><h3 class="subject-main-title">Python Programming</h3><p class="subject-code">UGCA1911</p></div>
+                    </div>
+                    <a href="#"target="_blank"class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Introduction to Python Programming Language</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Control Structures</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Python Functions</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Exception Handling</p></div>
+                </div>
+            </div>
+             <div class="syllabus-card-full hidden" data-semester="3">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-green-600"><i class="fa-solid fa-database"></i></div>
+                        <div><h3 class="subject-main-title">Computer Network</h3><p class="subject-code">UGCA1911</p></div>
+                    </div>
+                    <a href="#" target="_blank"class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Data communications concepts</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Network Reference Models</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>MAC sub layer</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Transport Layer</p></div>
+                </div>
+            </div>
+             <div class="syllabus-card-full hidden" data-semester="3">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-green-600"><i class="fa-solid fa-database"></i></div>
+                        <div><h3 class="subject-main-title">Data Structures</h3><p class="subject-code">UGCA1911</p></div>
+                    </div>
+                    <a href="#" target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Introduction to Data Structures</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Stacks and Queue</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Linked Lists and Trees</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Graphs, Searching, Sorting and Hashing</p></div>
+                </div>
+            </div>
+            <!--sem4-->
+
+            <div class="syllabus-card-full hidden" data-semester="4">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-purple-600"><i class="fa-solid fa-table"></i></div>
+                        <div><h3 class="subject-main-title">DBMS</h3><p class="subject-code">UGCA1915</p></div>
+                    </div>
+                    <a href="#"target="_blank"class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Introduction of DBMS</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Relational Database</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Introduction to Normalization</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Database Recovery</p></div>
+                </div>
+            </div>
+               <div class="syllabus-card-full hidden" data-semester="4">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-purple-600"><i class="fa-solid fa-table"></i></div>
+                        <div><h3 class="subject-main-title">Web Designing</h3><p class="subject-code">UGCA1915</p></div>
+                    </div>
+                    <a href="#" target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Introduction To HTML</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Lists,Adding Graphics To Html Documents,Tables</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Forms Used by a Web Site</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Introduction to JavaScript</p></div>
+                </div>
+            </div>
+              <div class="syllabus-card-full hidden" data-semester="4">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-purple-600"><i class="fa-solid fa-table"></i></div>
+                        <div><h3 class="subject-main-title">Operating Systems</h3><p class="subject-code">UGCA1915</p></div>
+                    </div>
+                    <a href="#"target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Fundamentals of Operating system</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Memory Management</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>I/O Device Management</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Advanced Operating systems</p></div>
+                </div>
+            </div>
+              <div class="syllabus-card-full hidden" data-semester="4">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-purple-600"><i class="fa-solid fa-table"></i></div>
+                        <div><h3 class="subject-main-title">Software Engineering</h3><p class="subject-code">UGCA1915</p></div>
+                    </div>
+                    <a href="#"target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>The Nature of Software</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Role of a system analyst</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Software design and its activities</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Testing Fundamentals</p></div>
+                </div>
+            </div>
+            <!--sem5-->
+            <div class="syllabus-card-full hidden" data-semester="5">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-blue-500"><i class="fa-brands fa-java"></i></div>
+                        <div><h3 class="subject-main-title">Java Programming</h3><p class="subject-code">BCA-501</p></div>
+                    </div>
+                    <a href="#"target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Java Programming Fundamentals</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Control Statements</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Arrays and Strings</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Multithreading</p></div>
+                </div>
+            </div>
+             <div class="syllabus-card-full hidden" data-semester="5">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-blue-500"><i class="fa-brands fa-java"></i></div>
+                        <div><h3 class="subject-main-title">PHP Programming</h3><p class="subject-code">BCA-501</p></div>
+                    </div>
+                    <a href="#" target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Introduction to PHP</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Control Statements</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Working with File and Directories</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Database Connectivity with MySql</p></div>
+                </div>
+            </div>
+ <div class="syllabus-card-full hidden" data-semester="5">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-blue-500"><i class="fa-brands fa-java"></i></div>
+                        <div><h3 class="subject-main-title">Cloud Computing</h3><p class="subject-code">BCA-501</p></div>
+                    </div>
+                    <a href="#"target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Overview of Computing Paradigm</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Virtualization</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>SLA Management in Cloud Computing</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Cloud Platforms in Industry</p></div>
+                </div>
+            </div>
+ <div class="syllabus-card-full hidden" data-semester="5">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-blue-500"><i class="fa-brands fa-java"></i></div>
+                        <div><h3 class="subject-main-title">Internet Of Things</h3><p class="subject-code">BCA-501</p></div>
+                    </div>
+                    <a href="#" target="_blank "class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Definition and Need of IoT</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Domain Specific IoTs </p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Need for IoT System Management</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Introduction to Raspberry PI-Interfaces</p></div>
+                </div>
+            </div>
+<!--sem6-->
+
+            <div class="syllabus-card-full hidden" data-semester="6">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-red-600"><i class="fa-brands fa-android"></i></div>
+                        <div><h3 class="subject-main-title">Software Project Management</h3><p class="subject-code">BCA-601</p></div>
+                    </div>
+                    <a href="#"target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Project Management Concepts</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>The Development Process</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Concepts of Risks and Risk Management</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Concepts in Configuration Management</p></div>
+                </div>
+            </div>
+             <div class="syllabus-card-full hidden" data-semester="6">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-red-600"><i class="fa-brands fa-android"></i></div>
+                        <div><h3 class="subject-main-title">Digital Marketing</h3><p class="subject-code">BCA-601</p></div>
+                    </div>
+                    <a href="#" target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Introduction to Digital Marketing </p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Search Engine Optimisation (SEO)</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Website Planning & Creation</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Online Advertising, Mobile Marketing and Web analytics</p></div>
+                </div>
+            </div> <div class="syllabus-card-full hidden" data-semester="6">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-red-600"><i class="fa-brands fa-android"></i></div>
+                        <div><h3 class="subject-main-title">Machine Learning</h3><p class="subject-code">BCA-601</p></div>
+                    </div>
+                    <a href="#"target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Introduction</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Supervised Learning</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Clustering</p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Reinforcement Learning</p></div>
+                </div>
+            </div> <div class="syllabus-card-full hidden" data-semester="6">
+                <div class="card-header-flex">
+                    <div class="flex items-center gap-5">
+                        <div class="icon-box-large bg-red-600"><i class="fa-brands fa-android"></i></div>
+                        <div><h3 class="subject-main-title">Android Programming</h3><p class="subject-code">BCA-601</p></div>
+                    </div>
+                    <a href="#" target="_blank" class="download-pdf-btn">PDF</a>
+                </div>
+                <div class="unit-grid">
+                    <div class="unit-box"><h6>Unit 1</h6><p>Characteristics of Mobile applications</p></div>
+                    <div class="unit-box"><h6>Unit 2</h6><p>Integrating cloud services</p></div>
+                    <div class="unit-box"><h6>Unit 3</h6><p>Mobile Software Engineering </p></div>
+                    <div class="unit-box"><h6>Unit 4</h6><p>Directory Structure of an Android Project</p></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

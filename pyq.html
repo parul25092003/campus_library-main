@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYQs | Digital BCA Hub</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/2563eb/open-book.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50/50">
+
+    <nav class="navbar-container">
+        <div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group no-underline">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:bg-blue-700 transition-all">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <span class="text-xl font-extrabold text-slate-900">Campus<span class="text-blue-600">Library</span></span>
+            </a>
+            <div class="hidden md:flex gap-10 items-center">
+                <a href="notes.html" class="nav-link ">Notes</a>
+                <a href="syllabus.html"t class="nav-link">Syllabus</a>
+                <a href="pyq.html" class="nav-link active">PYQs</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="signin.html" class="signin-btn">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+   <header class="library-header max-w-7xl mx-auto px-6 py-12 text-center">
+    <h2 class="text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">
+        Question Papers
+    </h2>
+    <p class="text-slate-500 text-lg">
+        Previous Year University Exams (IKGPTU)
+    </p>
+</header>
+
+    <section class="max-w-7xl mx-auto px-6 mb-12">
+        <div class="flex flex-wrap gap-4" id="semester-tabs">
+            <button class="tab-btn tab-active" onclick="switchSemester(1)">Semester 1</button>
+            <button class="tab-btn" onclick="switchSemester(2)">Semester 2</button>
+            <button class="tab-btn" onclick="switchSemester(3)">Semester 3</button>
+            <button class="tab-btn" onclick="switchSemester(4)">Semester 4</button>
+            <button class="tab-btn" onclick="switchSemester(5)">Semester 5</button>
+            <button class="tab-btn" onclick="switchSemester(6)">Semester 6</button>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="subject-grid">
+        
+              <div class="subject-card" data-semester="1"><div class="card-content"><div class="icon-box"><i class="fa-solid fa-microchip"></i></div><h3 class="subject-title">Mathematics</h3></div><div class="card-actions"><a href="assets\notes\maths.pdf" target="_blank" class="action-btn-primary">View</a></div></div>
+            <div class="subject-card" data-semester="1"><div class="card-content"><div class="icon-box"><i class="fa-solid fa-microchip"></i></div><h3 class="subject-title">Fundamentals of IT</h3></div><div class="card-actions"><a href="assets\notes\it.pdf" target="_blank" class="action-btn-primary">View</a></div></div>
+            <div class="subject-card" data-semester="1"><div class="card-content"><div class="icon-box"><i class="fa-solid fa-code"></i></div><h3 class="subject-title">Problem Solving in C</h3></div><div class="card-actions"><a href="assets\notes\C NOTES.pdf" target="_blank"class="action-btn-primary">View</a></div></div>
+            <div class="subject-card" data-semester="1"><div class="card-content"><div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div><h3 class="subject-title">English</h3></div><div class="card-actions"><a href="assets\notes\ENGLISH-NOTES.pdf" target="_blank"class="action-btn-primary">View</a></div></div>
+            <div class="subject-card" data-semester="1"><div class="card-content"><div class="icon-box"><i class="fa-solid fa-scale-balanced"></i></div><h3 class="subject-title">Human Values</h3></div><div class="card-actions"><a href="assets\notes\Human Values Notes File.pdf"target="_blank" class="action-btn-primary">v</a></div></div>
+
+            <div class="subject-card hidden" data-semester="2"><div class="card-content"><div class="icon-box bg-orange-100 text-orange-600"><i class="fa-solid fa-chart-line"></i></div><h3 class="subject-title">Fundamentals of Statistics</h3></div><div class="card-actions"><a href="assets\notes\Statistics.pdf"target="_blank" class="action-btn-primary bg-orange-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="2"><div class="card-content"><div class="icon-box bg-orange-100 text-orange-600"><i class="fa-solid fa-server"></i></div><h3 class="subject-title">Computer Architecture</h3></div><div class="card-actions"><a href="assets\notes\Computer Architecture.pdf"target="_blank"class="action-btn-primary bg-orange-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="2"><div class="card-content"><div class="icon-box bg-orange-100 text-orange-600"><i class="fa-solid fa-laptop-code"></i></div><h3 class="subject-title">OOPs using C++</h3></div><div class="card-actions"><a href="assets\notes\C++ notes.pdf" target="_blank"class="action-btn-primary bg-orange-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="2"><div class="card-content"><div class="icon-box bg-orange-100 text-orange-600"><i class="fa-solid fa-leaf"></i></div><h3 class="subject-title">Environmental Studies</h3></div><div class="card-actions"><a href="assets\notes\EVS Notes.pdf" target="_blank" class="action-btn-primary bg-orange-600">View</a></div></div>
+
+            <div class="subject-card hidden" data-semester="3"><div class="card-content"><div class="icon-box bg-green-100 text-green-600"><i class="fa-solid fa-network-wired"></i></div><h3 class="subject-title">Computer Network</h3></div><div class="card-actions"><a href="assets\notes\Computer_Network_notes.pdf" target="_blank" class="action-btn-primary bg-green-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="3"><div class="card-content"><div class="icon-box bg-green-100 text-green-600"><i class="fa-brands fa-python"></i></div><h3 class="subject-title">Python Programming</h3></div><div class="card-actions"><a href="assets\notes\Python complete notes -  3sem.pdf" target="_blank" class="action-btn-primary bg-green-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="3"><div class="card-content"><div class="icon-box bg-green-100 text-green-600"><i class="fa-solid fa-database"></i></div><h3 class="subject-title">Data Structures</h3></div><div class="card-actions"><a href="assets\notes\dsa.pdf" target="_blank"class="action-btn-primary bg-green-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="3"><div class="card-content"><div class="icon-box bg-green-100 text-green-600"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3 class="subject-title">PC Troubleshooting</h3></div><div class="card-actions"><a href="assets\notes\PC ASSEMBLY.pdf" target="_blank" class="action-btn-primary bg-green-600">View</a></div></div>
+
+            <div class="subject-card hidden" data-semester="4"><div class="card-content"><div class="icon-box bg-purple-100 text-purple-600"><i class="fa-solid fa-gears"></i></div><h3 class="subject-title">Software Engineering</h3></div><div class="card-actions"><a href="assets\notes\Software Engineering.pdf" target="_blank"class="action-btn-primary bg-purple-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="4"><div class="card-content"><div class="icon-box bg-purple-100 text-purple-600"><i class="fa-solid fa-table"></i></div><h3 class="subject-title">DBMS</h3></div><div class="card-actions"><a href="assets\notes\DBMS complete notes.pdf" target="_blank" class="action-btn-primary bg-purple-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="4"><div class="card-content"><div class="icon-box bg-purple-100 text-purple-600"><i class="fa-solid fa-desktop"></i></div><h3 class="subject-title">Operating Systems</h3></div><div class="card-actions"><a href="assets\notes\operating system complete notes.pdf" target="_blank" class="action-btn-primary bg-purple-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="4"><div class="card-content"><div class="icon-box bg-purple-100 text-purple-600"><i class="fa-solid fa-palette"></i></div><h3 class="subject-title">Web Designing</h3></div><div class="card-actions"><a href="#" target="_blank"class="action-btn-primary bg-purple-600">View</a></div></div>
+
+            <div class="subject-card hidden" data-semester="5"><div class="card-content"><div class="icon-box bg-pink-100 text-pink-600"><i class="fa-brands fa-php"></i></div><h3 class="subject-title">PHP Programming</h3></div><div class="card-actions"><a href="assets\notes\php.pdf" target="_blank"class="action-btn-primary bg-pink-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="5"><div class="card-content"><div class="icon-box bg-pink-100 text-pink-600"><i class="fa-brands fa-java"></i></div><h3 class="subject-title">Java Programming</h3></div><div class="card-actions"><a href="assets\notes\javanotes5.pdf" target="_blank"class="action-btn-primary bg-pink-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="5"><div class="card-content"><div class="icon-box bg-pink-100 text-pink-600"><i class="fa-solid fa-cloud"></i></div><h3 class="subject-title">Cloud Computing</h3></div><div class="card-actions"><a href="assets\notes\CLOUD COMPUTING.pdf" target="_blank"class="action-btn-primary bg-pink-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="5"><div class="card-content"><div class="icon-box bg-pink-100 text-pink-600"><i class="fa-solid fa-cloud"></i></div><h3 class="subject-title">Internet Of Things</h3></div><div class="card-actions"><a href="assets\notes\IoT & Applications Digital Notes.pdf" target="_blank"class="action-btn-primary bg-pink-600">View</a></div></div>
+
+            <div class="subject-card hidden" data-semester="6"><div class="card-content"><div class="icon-box bg-red-100 text-red-600"><i class="fa-brands fa-android"></i></div><h3 class="subject-title">Android Programming</h3></div><div class="card-actions"><a href="#" target="_blank"class="action-btn-primary bg-red-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="6"><div class="card-content"><div class="icon-box bg-red-100 text-red-600"><i class="fa-solid fa-brain"></i></div><h3 class="subject-title">Machine Learning</h3></div><div class="card-actions"><a href="assets\notes\ml.pdf" target="_blank"class="action-btn-primary bg-red-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="6"><div class="card-content"><div class="icon-box bg-red-100 text-red-600"><i class="fa-solid fa-bullhorn"></i></div><h3 class="subject-title">Digital Marketing</h3></div><div class="card-actions"><a href="assets\notes\dm.pdf"target="_blank" class="action-btn-primary bg-red-600">View</a></div></div>
+            <div class="subject-card hidden" data-semester="6"><div class="card-content"><div class="icon-box bg-blue-100 text-red-600"><i class="fa-solid fa-cloud"></i></div><h3 class="subject-title">Software Project Management</h3></div><div class="card-actions"><a href="assets\notes\SPM full.pdf" target="_blank"class="action-btn-primary bg-red-600">View</a></div></div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
